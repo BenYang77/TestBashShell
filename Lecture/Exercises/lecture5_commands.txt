@@ -1,0 +1,61 @@
+ps
+bash
+ps
+exit
+echo rea
+echo -n rea
+echo "hello there"
+echo hello there
+echo hi there *
+echo "hi there *"
+echo "your current directory: `pwd`"
+NAME=Ruth
+$NAME
+echo $NAME
+echo $Name
+FILE="ls *.txt"
+set | grep FILE
+echo $FILE
+ls *.txt
+rm silly.txt
+echo $FILE
+FILE="`ls *.txt`"
+set | grep FILE
+echo $FILE
+touch silly.txt
+ls *.txt
+echo $FILE
+set | grep FILE
+FILE="hello $NAME"
+echo $FILE
+FILE='`ls *.txt`'
+echo $FILE
+x=5
+y=6
+echo "$x + $y"
+let z="$x + $y"
+echo z
+echo $z
+x=3
+echo x
+echo $x
+echo "$x"
+echo '$x'
+echo \'$x\'
+echo 'x'
+echo $HOSTNAME
+echo $PS1
+man bash
+echo $SHELL
+echo $USER
+echo $PATH
+./slide7.sh 
+PATH=""
+echo $PATH
+./slide7.sh 
+PATH="${PATH}:/homes/iws/rea/390"
+echo $PATH
+slide7.sh 
+seq 6
+chmod u+x createhw.sh
+./createhw.sh 5

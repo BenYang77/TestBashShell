@@ -13,3 +13,8 @@
 ###  Reason : learn for Bash Script to deal with txt file  
  
  
+# TestBashShell 20180822 18:04:13.85 
+##  Purpose : Test lecture at 5  
+###  Reason : Intro to shell scripting  
+ 
+ 

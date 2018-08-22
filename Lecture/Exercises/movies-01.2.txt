@@ -1,5 +1,7 @@
+^ matches the beginning of a line; $ the end
 a.*a matches aa, aba, a8qa, a!?_a, ... 
 Reg : s/^(.*) \(([0-9]{4})\)/\2 \1 /g
+
 1957 (1957) 12  Angry Men 
 1966 The Good, the Bad and the Ugly 
 1972 The Godfather 
@@ -21,6 +23,7 @@ The Good, the Bad and the Ugly (1966)
 The Shawshank Redemption (1994)
 
 
+Reg : s/^(.*) \(([0-9]{4})\)/\1 \2 /g
 (1957) 12 1957  Angry Men 
 Inception 2010 
 Pulp 1994  Fiction 
