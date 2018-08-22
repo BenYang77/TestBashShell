@@ -1,0 +1,14 @@
+sed -r "s/REGEX/TEXT/g" filename
+
+Write a shell script that reads a list of file names from  files.txt 
+and finds any occurrences of MM/DD dates and converts them into MM/DD/YYYY dates.
+
+Example:
+	[04 /17]
+
+would be changed to:
+    sed -r "s#([0-9]{1,2})/([0-9]{1,2})#\2/\1/$YEAR#g"
+	DD/MM/YYYY : 04 /17/2013
+    sed -r "s#([0-9]{1,2})/([0-9]{1,2})#\1/\2/$YEAR#g"
+	MM/DD/YYYY : 04 /17/2013
+04/17

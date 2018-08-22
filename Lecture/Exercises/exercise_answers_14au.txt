@@ -1,0 +1,48 @@
+Lecture 7 (Regular Expressions) Exercise answers:
+
+Slide 6:
+      egrep "\<C\>" ideas.txt
+
+      egrep -i "^Act\>|^Scene" hamlet.txt
+      egrep -i "(^Act\>|^Scene) [IV]+\." hamlet.txt
+
+
+Slide 8:
+      egrep "\^_?\^" chat.txt  
+
+
+Slide 10:
+      egrep "\<[ABCDF][+\-]?$" 143.txt
+
+
+Slide 11:
+      egrep "\(206\) [0-9]{3}-[0-9]{4}" faculty.html 
+
+
+Slide 14:
+
+      # Simple search and replace
+      sed -r "s/The/The Super Awesome/g" movies.txt
+
+      # Only at beginning of line.
+      sed -r "s/^The/The Super Awesome/g" movies.txt
+
+      # Put year first and sort by year
+      sed -r "s/^(.*)\(([0-9]{4})\)/\2 \1/g" movies.txt | sort
+
+      # Now put it back in original format:
+      sed -r "s/^(.*) \(([0-9]{4})\)/\2 \1 /g" movies.txt | sort | sed -r "s/([0-9]{4}) (.*)/\2(\1)/g"
+
+
+Slide 15:
+      sed -r "s/([0-9]{3})-([0-9]{4})/(206) \1\.\2/g" faculty.html
+      
+
+Slide 17:
+      #!/bin/bash
+
+      YEAR=2011
+      for FILE in `cat files.txt`; do
+      	    sed -r "s#([0-9]{1,2})/([0-9]{1,2})#\1/\2/$YEAR#g" $FILE
+      done
+ 

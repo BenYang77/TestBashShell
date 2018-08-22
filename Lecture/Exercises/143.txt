@@ -1,0 +1,26 @@
+Character sets
+[ ] group characters into a character set;
+will match any single character from the set
+ "[bcd]art" matches strings containing "bart", "cart", and "dart"
+ equivalent to "(b|c|d)art" but shorter
+• inside [ ], most modifier keys act as normal characters
+ "what[.!*?]*" matches "what", "what.", "what!", "what?**!", ...
+• Exercise : Match letter grades in 143.txt such as A, B+, or D- .
+
+
+Jessica Miller
+0987653
+B+
+Marty Stepp
+8347569
+A-
+Daisy May
+8376445
+C+
+Meghan Miller 9383734 D
+Toni Carroll
+8373336
+A+
+Leigha Tard
+6635443 F
+F+hello

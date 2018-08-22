@@ -1,0 +1,19 @@
+You can reuse the same backreference more than once. ([a-c])x\1x\1 matches axaxa, bxbxb and cxcxc.
+
+Most regex flavors support up to 99 capturing groups and double-digit backreferences. 
+So \99 is a valid backreference if your regex has 99 capturing groups.
+
+every span of text captured by () is given an internal number
+you can use \number to use the captured text in the replacement
+\0 is the overall pattern
+\1 is the first parenthetical capture
+...
+Back-references can also be used in egrep pattern matching
+Match “A” surrounded by the same character: “(.)A\1”
+Match “A-Z” surrounded by the same character: "(.)[A-Z]\1"
+Ben, Yabg
+Ben Yabg
+Example: swap last names with first names
+sed -r "s/([A-Za-z]+), ([A-Za-z]+)/\2 \1/g" names.txt
+
+Exercise : Reformat phone numbers with 685-2181 format to (206) 685.2181 format.
