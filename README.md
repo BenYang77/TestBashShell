@@ -8,3 +8,8 @@
 ###  Reason : learn for Bash Script to deal with txt file  
  
  
+# TestBashShell 20180822 14:21:40.51 
+##  Purpose : Test Regular Expressions; egrep; sed 
+###  Reason : learn for Bash Script to deal with txt file  
+ 
+ 
